@@ -51,7 +51,7 @@ public class Sale {
             String[] kv = part.split(":", 2);
             String key = kv[0].replaceAll("\"", "").trim();
             String value = kv[1].trim();
-            System.out.println(value);
+
             switch (key) {
                 case "saleID":
                     saleID = Integer.parseInt(value.replaceAll("\"", "")); // <-- This is necessary
